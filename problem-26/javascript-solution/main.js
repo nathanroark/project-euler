@@ -1,7 +1,7 @@
 /*
  *  Func: getRecurringCycle
  *
- *  Desc: Find the length of longest reoccurring cycle for given denominator of 1
+ *  Desc: Find the length of longest reoccurring cycle for given denominator under 1
  *
  *  Param:  {den} - denominator to check for cycles
  *  Var:    {quo} - quotient in check
