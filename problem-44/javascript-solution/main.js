@@ -47,11 +47,21 @@ console.log("Solution: ", solve());
 
 /*
 
+// Trideum Laptop
 time node main.js 
 Solution:  5482660
 
 real	0m0.075s
 user	0m0.068s
 sys	    0m0.009s
+
+
+// Personal Computer
+time node main.js
+Solution:  5482660
+
+real    0m0.039s
+user    0m0.040s
+sys     0m0.000s
 
 */

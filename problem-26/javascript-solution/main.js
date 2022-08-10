@@ -23,7 +23,7 @@ let den = 0;    // denominator with longest reoccurring decimal cycle
 let len = 0;    // length of longest reoccurring decimal cycle
 let i_len = 0;  // current iterator's longest reoccurring decimal cycle
 
-for (let i = 1; i <= 1000; i++) {
+for (let i = 1; i <= 10000; i++) {
     i_len = getRecurringCycle(i);
     if (i_len > len) {
         den = i;
