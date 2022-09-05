@@ -28,14 +28,12 @@ const solution = (matrix: number[][], k: number) => {
     // directions to check [[right], [down], [right-down], [left-down]];
     let directions: number[][] = [[1, 0], [0, 1], [1, 1], [-1, 1]];
 
-    for (let x = 3; x < size; x++) {
-        for (let y = 3; y < size; y++) {
+    for (let x = 3; x < size - 3; x++) {
+        for (let y = 3; y < size - 3; y++) {
             for (let dir of directions) { // check all directions
                 let product = 1; // reset current product
                 for (let shift = 0; shift < k; shift++) { // loop through given number of cells to check in this direction
-                    let _x = x + shift * dir[0];
-                    let _y = y + shift * dir[1];
-                    product *= (_x < size && _y < size) ? matrix[_x][_y] : 0;
+                    product *= matrix[x + shift * dir[0]][y + shift * dir[1]];
                 }
                 best = Math.max(product, best);
             }
